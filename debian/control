@@ -1,0 +1,12 @@
+Source: dev-meta
+Priority: optional
+Section: metapackages
+Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+
+Package: dev-meta
+Architecture: all
+Depends: bison, build-essential, ccls, clang, cmake, coc-nvim, debian-archive-keyring, debootstrap, dh-make, dpkg-dev, dput-ng, eatmydata, flex, gdb, git, gitsigns-nvim, libncurses-dev, pbuilder, python3-pip, statuscol-nvim, vim-fugitive, vim-lsp-cxx-highlight
+Description: dev-meta
