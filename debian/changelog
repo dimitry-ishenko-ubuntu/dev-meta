@@ -1,5 +1,7 @@
-dev-meta (2.0) UNRELEASED; urgency=medium
+dev-meta (2.0) unstable; urgency=medium
 
-  * Initial Release.
+  * Import Debian package
+  * Add blurb
+  * Add license
 
- -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 28 Feb 2020 20:45:45 -0500
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 02 Dec 2023 19:16:44 -0500
