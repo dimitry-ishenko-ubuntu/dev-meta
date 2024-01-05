@@ -1,3 +1,10 @@
+dev-meta (2.3) unstable; urgency=medium
+
+  * Add copyright file
+  * Needed for kernel builds
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 05 Jan 2024 15:05:18 -0500
+
 dev-meta (2.2) unstable; urgency=medium
 
   * Use devdocs instead
