@@ -1,3 +1,9 @@
+dev-meta (2.4) unstable; urgency=medium
+
+  * Add devdocs and data
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 07 Feb 2024 22:23:33 -0500
+
 dev-meta (2.3) unstable; urgency=medium
 
   * Add copyright file
