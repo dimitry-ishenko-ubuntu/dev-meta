@@ -1,3 +1,9 @@
+dev-meta (2.9) unstable; urgency=medium
+
+  * Install termdebug.vim
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Mon, 22 Jul 2024 18:46:34 -0400
+
 dev-meta (2.8) unstable; urgency=medium
 
   * Modify several key mappings
