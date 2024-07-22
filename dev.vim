@@ -16,17 +16,19 @@ let g:termdebug_config.sign = "󰲲"
 
 highlight debugBreakpoint ctermfg=darkred ctermbg=NONE
 
-" <f4> <s-f4> <c-f4>
-nnoremap <f4>  :Gdb<cr>
-nnoremap <f16> :Source<cr>
-nnoremap <f28> :Program<cr>
+" <f4> <s-f4>
+nnoremap <f4>  :Debug<cr>
+nnoremap <f16> :Source<cr>:wincmd L<cr>
 
 " <f5> <s-f5> <c-f5>
 nnoremap <f5>  :Run<cr>
 nnoremap <f17> :Stop<cr>
 nnoremap <f29> :Cont<cr>
 
-nnoremap <silent><f6> :Termdebug<cr><esc><esc>:Source<cr>:wincmd L<cr>:Gdb<cr>
+" <f6> <s-f6> <c-f6>
+nnoremap <f6>  :Gdb<cr>
+nnoremap <f18> :Source<cr>
+nnoremap <f30> :Program<cr>
 
 " <f9> <s-f9>
 nnoremap <f9>  :Break<cr>
