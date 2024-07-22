@@ -7,10 +7,14 @@ nnoremap <leader>mg :CMake -B build
 nnoremap <leader>mr :CMake -B build -DCMAKE_BUILD_TYPE=Release
 nnoremap <leader>mx :CMake -E rm -rf build
 
-packadd termdebug
-Alias gdb Termdebug
+if !exists("g:termdebug_config")
+    let g:termdebug_config = { }
+endif
 
-highlight debugBreakpoint ctermbg=NONE ctermfg=red
+let g:termdebug_config.signs = [ "󰲠", "󰲢", "󰲤", "󰲦", "󰲨", "󰲪", "󰲬", "󰲮", "󰲰" ]
+let g:termdebug_config.sign = "󰲲"
+
+highlight debugBreakpoint ctermfg=darkred ctermbg=NONE
 
 " <f4> <s-f4> <c-f4>
 nnoremap <f4>  :Gdb<cr>
