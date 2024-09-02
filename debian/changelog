@@ -1,3 +1,9 @@
+dev-meta (2.12) unstable; urgency=medium
+
+  * Depend on debchange
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Mon, 02 Sep 2024 11:33:35 -0400
+
 dev-meta (2.11) unstable; urgency=medium
 
   * Add build-source, debian-release and export-source scripts
