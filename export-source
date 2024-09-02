@@ -1,0 +1,6 @@
+#!/bin/bash
+
+src=$(dpkg-parsechangelog -S Source)
+ver=$(dpkg-parsechangelog -S Version | sed "s/^.\+://; s/-[^-]\+$//")
+
+git ls-files -z --recurse-submodules :^debian | tar -caf ../${src}_${ver}.orig.tar.gz --null --mtime=@1234567890 -T-

@@ -1,1 +1,2 @@
+build-source debian-release export-source usr/bin
 dev.vim termdebug.vim etc/skel/.config/nvim/plugin

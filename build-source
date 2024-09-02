@@ -1,0 +1,18 @@
+#!/bin/bash
+
+to_distro()
+{
+    local d="$1" v="$2"
+    sed -re "1 s/\(([^)~]+)(~[^)]+)?\) ([^;]+)/\(\1${v:+~$v}\) $d/" -i debian/changelog
+}
+
+if [[ "$1" == "all" ]]; then
+    shift
+    for distro in focal jammy noble; do
+        to_distro $distro $distro
+        "$0" "$@"
+    done
+    to_distro unstable ""
+else
+    dpkg-buildpackage --build=source --no-check-builddeps --no-pre-clean "$@"
+fi
