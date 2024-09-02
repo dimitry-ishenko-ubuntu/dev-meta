@@ -1,3 +1,9 @@
+dev-meta (2.11) unstable; urgency=medium
+
+  * Add build-source, debian-release and export-source scripts
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Mon, 02 Sep 2024 11:26:54 -0400
+
 dev-meta (2.10) unstable; urgency=medium
 
   * Add devdocs-data-opengl
