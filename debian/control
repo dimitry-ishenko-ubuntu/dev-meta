@@ -8,5 +8,5 @@ Rules-Requires-Root: no
 
 Package: dev-meta
 Architecture: all
-Depends: bison, build-essential, clang, clangd, cmake, coc-nvim, debian-archive-keyring, debootstrap, devdocs, devdocs-data-bash, devdocs-data-c, devdocs-data-c++, devdocs-data-cmake, devdocs-data-g++, devdocs-data-gcc, devdocs-data-git, devdocs-data-make, devdocs-data-opengl, devdocs-data-python, devdocs-data-qt, dh-make, dpkg-dev, dput-ng, eatmydata, flex, gdb, git, gitsigns-nvim, libelf-dev, libncurses-dev, manpages-dev, manpages-posix, pbuilder, python3-pip, statuscol-nvim, vim-fugitive
+Depends: bison, build-essential, clang, clangd, cmake, coc-nvim, debchange, debian-archive-keyring, debootstrap, devdocs, devdocs-data-bash, devdocs-data-c, devdocs-data-c++, devdocs-data-cmake, devdocs-data-g++, devdocs-data-gcc, devdocs-data-git, devdocs-data-make, devdocs-data-opengl, devdocs-data-python, devdocs-data-qt, dh-make, dpkg-dev, dput-ng, eatmydata, flex, gdb, git, gitsigns-nvim, libelf-dev, libncurses-dev, manpages-dev, manpages-posix, pbuilder, python3-pip, statuscol-nvim, vim-fugitive
 Description: dev-meta
