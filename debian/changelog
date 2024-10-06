@@ -1,3 +1,9 @@
+dev-meta (2.15) unstable; urgency=medium
+
+  * debian-release: refactor and fix
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 06 Oct 2024 09:50:30 -0400
+
 dev-meta (2.14) unstable; urgency=medium
 
   * Depend on decopy and pristine-tar
