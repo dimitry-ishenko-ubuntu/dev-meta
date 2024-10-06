@@ -28,22 +28,22 @@ dch-commit()
 
 git-debian-tag()
 {
-    local ver=$(dpkg-parsechangelog -S Version | sed "s/:/%/g")
-    git tag debian/$ver
+    local ver=$(dpkg-parsechangelog -S Version)
+    git tag debian/${ver//:/%}
 }
 
 debian-release()
 {
-    local ver=$(dpkg-parsechangelog -S Version | sed "s/:/%/g")
+    local ver=$(dpkg-parsechangelog -S Version)
     local distro=$(dpkg-parsechangelog -S Distribution)
 
     if [[ "$distro" == "UNRELEASED" ]]; then
-        ver=$(dpkg-parsechangelog -u $ver -S Version | sed "s/:/%/g")
+        ver=$(dpkg-parsechangelog -u $ver -S Version)
     else
         dch-bump-version
     fi
-    if [[ -n $(git tag -l debian/${ver}) ]]; then
-        git-log-oneline debian/${ver}.. | dch-add-from-stdin
+    if [[ -n $(git tag -l debian/${ver//:/%}) ]]; then
+        git-log-oneline debian/${ver//:/%}.. | dch-add-from-stdin
     else
         git-log-oneline | dch-add-from-stdin
     fi
