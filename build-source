@@ -8,7 +8,7 @@ to_distro()
 
 if [[ "$1" == "all" ]]; then
     shift
-    for distro in focal jammy noble; do
+    for distro in focal jammy noble oracular; do
         to_distro $distro $distro
         "$0" "$@"
     done
