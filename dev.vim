@@ -1,7 +1,7 @@
 command -nargs=* CMake let mp0=&makeprg|set makeprg=cmake|make <args>|let &makeprg=mp0
 Alias cmake CMake
 
-nnoremap <leader>mb :CMake --build build
+nnoremap <leader>mb :CMake --build build -j `nproc`
 nnoremap <leader>md :CMake -B build -DCMAKE_BUILD_TYPE=Debug
 nnoremap <leader>mg :CMake -B build
 nnoremap <leader>mr :CMake -B build -DCMAKE_BUILD_TYPE=Release
