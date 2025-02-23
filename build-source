@@ -6,9 +6,11 @@ to_distro()
     sed -re "1 s/\(([^)~]+)(~[^)]+)?\) ([^;]+)/\(\1${v:+~$v}\) $d/" -i debian/changelog
 }
 
+distros=`ubuntu-distro-info --supported`
+
 if [[ "$1" == "all" ]]; then
     shift
-    for distro in focal jammy noble oracular; do
+    for distro in $distros; do
         to_distro $distro $distro
         "$0" "$@"
     done
