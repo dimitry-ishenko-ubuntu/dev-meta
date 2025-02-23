@@ -1,4 +1,4 @@
-:command -nargs=* CMake set makeprg=cmake|make <args>|set makeprg&
+command -nargs=* CMake let mp0=&makeprg|set makeprg=cmake|make <args>|let &makeprg=mp0
 Alias cmake CMake
 
 nnoremap <leader>mb :CMake --build build
