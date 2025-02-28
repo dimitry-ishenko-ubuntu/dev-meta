@@ -3,4 +3,5 @@
 src=$(dpkg-parsechangelog -S Source)
 ver=$(dpkg-parsechangelog -S Version | sed "s/^.\+://; s/-[^-]\+$//")
 
-git ls-files -z --recurse-submodules :^debian | tar -caf ../${src}_${ver}.orig.tar.gz --null --mtime=@1234567890 -T-
+excl=(:^debian :^.github :^.gitlab-ci.yml :^bitbucket-pipelines.yml)
+git ls-files -z --recurse-submodules ${excl[@]} | tar -caf ../${src}_${ver}.orig.tar.gz --null --mtime=@1234567890 -T-
