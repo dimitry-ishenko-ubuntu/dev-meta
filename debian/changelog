@@ -1,3 +1,9 @@
+dev-meta (2.19.1) unstable; urgency=medium
+
+  * d/control: devdocs are now in a separate PPA
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 28 Feb 2025 12:41:00 -0500
+
 dev-meta (2.19) unstable; urgency=medium
 
   * export-source: exclude CI/CD files
