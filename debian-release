@@ -53,4 +53,4 @@ debian-release()
 }
 
 # detect if this script was sourced, and if so just export the functions
-[[ "${0##*/}" == "bash" ]] || debian-release
+[[ "$0" == *bash ]] || debian-release
