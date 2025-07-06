@@ -15,7 +15,6 @@ Depends:
  clang,
  clangd,
  cmake,
- coc-nvim,
  debchange,
  debian-archive-keyring,
  debootstrap,
