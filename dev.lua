@@ -14,9 +14,9 @@ if type(create_alias) == "function" then
    create_alias("cmake", "CMake")
 end
 
-map("n", "<leader>mb", "<cmd>CMake --build build -j `nproc`")
-map("n", "<leader>mg", "<cmd>CMake -B build")
-map("n", "<leader>mx", "<cmd>CMake -E rm -rf build")
+map("n", "<leader>mb", ":CMake --build build -j `nproc`")
+map("n", "<leader>mg", ":CMake -B build")
+map("n", "<leader>mx", ":CMake -E rm -rf build")
 
 -- devdocs
 function CppWord()
