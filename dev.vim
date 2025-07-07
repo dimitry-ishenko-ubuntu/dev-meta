@@ -17,7 +17,7 @@ let g:termdebug_config.sign = "󰲲"
 highlight debugBreakpoint ctermfg=darkred ctermbg=NONE
 
 " <f4> <s-f4>
-nnoremap <f4>  :Debug<cr>
+nnoremap <f4>  :Termdebug<cr>
 nnoremap <f16> :Source<cr>:wincmd L<cr>
 
 " <f5> <s-f5> <c-f5>
