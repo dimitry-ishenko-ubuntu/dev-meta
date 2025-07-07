@@ -1,3 +1,9 @@
+dev-meta (3.1.1) unstable; urgency=medium
+
+  * dev.lua: fix CMake commands
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Mon, 07 Jul 2025 12:38:21 -0400
+
 dev-meta (3.1) unstable; urgency=medium
 
   * dev.lua: use <cmd> instead of :
