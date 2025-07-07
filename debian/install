@@ -1,2 +1,2 @@
 build-source debian-release export-source usr/bin
-dev.vim etc/skel/.config/nvim/plugin
+dev.lua etc/skel/.config/nvim/plugin
