@@ -14,9 +14,9 @@ if type(create_alias) == "function" then
    create_alias("cmake", "CMake")
 end
 
-map("n", "<leader>mb", ":CMake --build build -j `nproc`")
-map("n", "<leader>mg", ":CMake -B build")
-map("n", "<leader>mx", ":CMake -E rm -rf build")
+map("n", "<leader>mb", "<cmd>CMake --build build -j `nproc`")
+map("n", "<leader>mg", "<cmd>CMake -B build")
+map("n", "<leader>mx", "<cmd>CMake -E rm -rf build")
 
 -- devdocs
 function CppWord()
@@ -52,22 +52,22 @@ vim.cmd([[
     highlight debugBreakpoint ctermfg=darkred ctermbg=NONE guifg=darkred guibg=NONE
 ]])
 
-map("n", "<f4>", ":Termdebug<cr>")
-map("n", "<f16>", ":Source<cr>:wincmd L<cr>")
+map("n", "<f4>", "<cmd>Termdebug<cr>")
+map("n", "<f16>", "<cmd>Source<cr><cmd>wincmd L<cr>")
 
-map("n", "<f5>", ":Run<cr>")
-map("n", "<f17>", ":Stop<cr>") -- s-f5
-map("n", "<f29>", ":Cont<cr>") -- c-f5
+map("n", "<f5>", "<cmd>Run<cr>")
+map("n", "<f17>", "<cmd>Stop<cr>") -- s-f5
+map("n", "<f29>", "<cmd>Cont<cr>") -- c-f5
 
-map("n", "<f6>", ":Gdb<cr>")
-map("n", "<f18>", ":Source<cr>") -- s-f6
-map("n", "<f30>", ":Program<cr>") -- c-f6
+map("n", "<f6>", "<cmd>Gdb<cr>")
+map("n", "<f18>", "<cmd>Source<cr>") -- s-f6
+map("n", "<f30>", "<cmd>Program<cr>") -- c-f6
 
-map("n", "<f9>", ":Break<cr>")
-map("n", "<f21>", ":Clear<cr>") -- s-f9
+map("n", "<f9>", "<cmd>Break<cr>")
+map("n", "<f21>", "<cmd>Clear<cr>") -- s-f9
 
-map("n", "<f10>", ":Over<cr>")
-map("n", "<f34>", ":Until<cr>") -- c-f10
+map("n", "<f10>", "<cmd>Over<cr>")
+map("n", "<f34>", "<cmd>Until<cr>") -- c-f10
 
-map("n", "<f11>", ":Step<cr>")
-map("n", "<f23>", ":Finish<cr>") -- s-f11
+map("n", "<f11>", "<cmd>Step<cr>")
+map("n", "<f23>", "<cmd>Finish<cr>") -- s-f11
