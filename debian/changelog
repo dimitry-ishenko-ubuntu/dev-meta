@@ -1,3 +1,9 @@
+dev-meta (3.2) unstable; urgency=medium
+
+  * Depend on nvim-lspconfig
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 08 Jul 2025 01:45:52 -0400
+
 dev-meta (3.1.1) unstable; urgency=medium
 
   * dev.lua: fix CMake commands
