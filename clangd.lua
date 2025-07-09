@@ -1,7 +1,7 @@
 local prev_on_attach = vim.tbl_get(vim.lsp.config, "clangd", "on_attach")
 
 vim.lsp.config("clangd", {
-    cmd = {"clangd", "--compile-commands-dir=build"},
+    cmd = {"clangd", "--compile-commands-dir=build", "--header-insertion=never"},
     root_markers = {
         "build",
         ".clangd",
