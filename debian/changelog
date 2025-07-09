@@ -1,3 +1,9 @@
+dev-meta (3.4) unstable; urgency=medium
+
+  * export-source: add options & custom path
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 09 Jul 2025 13:36:25 -0400
+
 dev-meta (3.3) unstable; urgency=medium
 
   * clangd.lua: integrate with cmp-nvim-lsp
