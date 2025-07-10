@@ -36,7 +36,7 @@ Depends:
  pbuilder,
  python3-pip,
  statuscol-nvim,
- vim-fugitive
+ vim-fugitive,
 Recommends:
  devdocs,
  devdocs-data-bash,
@@ -50,6 +50,8 @@ Recommends:
  devdocs-data-man,
  devdocs-data-opengl,
  devdocs-data-python,
- devdocs-data-qt
+ devdocs-data-qt,
+ git-lfs,
+ git-svn,
 Description: dev-meta
  Development tools
