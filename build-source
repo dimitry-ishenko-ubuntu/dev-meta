@@ -3,7 +3,7 @@
 to_distro()
 {
     local d="$1" v="$2"
-    sed -re "1 s/\(([^)~]+)(~[^)]+)?\) ([^;]+)/\(\1${v:+~$v}\) $d/" -i debian/changelog
+    sed -E "1 s/(~[a-z]+)?\) [a-z]+/${v:+~$v}\) $d/" -i debian/changelog
 }
 
 distros=`ubuntu-distro-info --supported`
