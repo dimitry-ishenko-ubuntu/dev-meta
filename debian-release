@@ -42,8 +42,10 @@ debian-release()
     else
         dch-bump-version
     fi
-    if [[ -n $(git tag -l debian/${ver//:/%}) ]]; then
-        git-log-oneline debian/${ver//:/%}.. | dch-add-from-stdin
+
+    local tag="debian/`echo $ver | tr ':~' '%_'`"
+    if [[ -n $(git tag -l $tag) ]]; then
+        git-log-oneline $tag.. | dch-add-from-stdin
     else
         git-log-oneline | dch-add-from-stdin
     fi
