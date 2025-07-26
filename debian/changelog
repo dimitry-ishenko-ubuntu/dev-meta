@@ -1,3 +1,10 @@
+dev-meta (3.6) UNRELEASED; urgency=medium
+
+  * debian-release: replace ~ with _ in tag names
+  * build-source: allow ~ in package version
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 26 Jul 2025 13:50:17 -0400
+
 dev-meta (3.5) unstable; urgency=medium
 
   * d/control: recommend git-lfs and git-svn
