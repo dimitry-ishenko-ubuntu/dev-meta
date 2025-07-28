@@ -29,7 +29,8 @@ dch-commit()
 git-debian-tag()
 {
     local ver=$(dpkg-parsechangelog -S Version)
-    git tag debian/${ver//:/%}
+    local tag=debian/$(echo $ver | tr ':~' '%_')
+    git tag $tag
 }
 
 debian-release()
@@ -43,7 +44,7 @@ debian-release()
         dch-bump-version
     fi
 
-    local tag="debian/`echo $ver | tr ':~' '%_'`"
+    local tag=debian/$(echo $ver | tr ':~' '%_')
     if [[ -n $(git tag -l $tag) ]]; then
         git-log-oneline $tag.. | dch-add-from-stdin
     else
