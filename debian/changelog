@@ -1,4 +1,4 @@
-dev-meta (3.6) UNRELEASED; urgency=medium
+dev-meta (3.6) unstable; urgency=medium
 
   * debian-release: replace ~ with _ in tag names
   * build-source: allow ~ in package version
