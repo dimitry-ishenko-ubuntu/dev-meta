@@ -34,7 +34,6 @@ Depends:
  nvim-lspconfig,
  pristine-tar,
  pbuilder,
- python3-pip,
  statuscol-nvim,
  vim-fugitive,
 Recommends:
@@ -53,5 +52,6 @@ Recommends:
  devdocs-data-qt,
  git-lfs,
  git-svn,
+ python3-pip,
 Description: dev-meta
  Development tools
