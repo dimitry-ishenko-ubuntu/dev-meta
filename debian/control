@@ -53,5 +53,7 @@ Recommends:
  git-lfs,
  git-svn,
  python3-pip,
+ python3-pylsp,
+ python3-pylsp-rope,
 Description: dev-meta
  Development tools
