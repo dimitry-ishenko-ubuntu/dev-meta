@@ -1,2 +1,2 @@
 build-source debian-release export-source usr/bin
-clangd.lua dev.lua etc/skel/.config/nvim/plugin
+clangd.lua dev.lua pylsp.lua etc/skel/.config/nvim/plugin
