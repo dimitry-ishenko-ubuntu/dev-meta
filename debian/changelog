@@ -1,3 +1,12 @@
+dev-meta (3.8) unstable; urgency=medium
+
+  * d/install: install pylsp.lua
+  * Add note about mercurial and python3-svn
+  * d/control: recommend pylsp
+  * d/control: make python3-pip uninstallable
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Thu, 31 Jul 2025 22:58:44 -0400
+
 dev-meta (3.7) unstable; urgency=medium
 
   * debian-release: missed tag name replacement
