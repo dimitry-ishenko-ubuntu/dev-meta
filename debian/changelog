@@ -1,3 +1,10 @@
+dev-meta (3.9) unstable; urgency=medium
+
+  * Not using git-svn anymore
+  * Not using cmp-nvim anymore
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 19 Sep 2025 10:00:42 -0400
+
 dev-meta (3.8) unstable; urgency=medium
 
   * d/install: install pylsp.lua
